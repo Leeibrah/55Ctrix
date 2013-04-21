@@ -171,7 +171,7 @@ void _init()
 	pinSet(clock_pin, INPUT); /*clock pin*/
 	pinsMultiSet(int_data_pins, OUTPUT); /*internal data pins*/
 	pinsMultiSet(plex_pins, OUTPUT); /* multiplexing pins*/
-	//InterruptInit();
+	InterruptInit();
 	USART_Init(57600);
 }
 
@@ -446,7 +446,7 @@ int main(void)
     while(1)
     {   
 		//HoldDisplay(cancri,100);
-		Display(cancri);
-		//DefaultInfo();
+		//Display(cancri);
+		DefaultInfo();
     }
 }
